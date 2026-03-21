@@ -1,0 +1,13 @@
+{
+  "itemGroup.jadeownerfix": "Example Mod Tab",
+  "block.jadeownerfix.example_block": "Example Block",
+  "item.jadeownerfix.example_item": "Example Item",
+
+  "jadeownerfix.configuration.title": "JadeOwnerFix Configs",
+  "jadeownerfix.configuration.section.jadeownerfix.common.toml": "JadeOwnerFix Configs",
+  "jadeownerfix.configuration.section.jadeownerfix.common.toml.title": "JadeOwnerFix Configs",
+  "jadeownerfix.configuration.items": "Item List",
+  "jadeownerfix.configuration.logDirtBlock": "Log Dirt Block",
+  "jadeownerfix.configuration.magicNumberIntroduction": "Magic Number Text",
+  "jadeownerfix.configuration.magicNumber": "Magic Number"
+}

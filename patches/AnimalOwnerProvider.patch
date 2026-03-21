@@ -1,0 +1,14 @@
+diff --git a/src/main/java/snownee/jade/addon/vanilla/AnimalOwnerProvider.java b/src/main/java/snownee/jade/addon/vanilla/AnimalOwnerProvider.java
+--- a/src/main/java/snownee/jade/addon/vanilla/AnimalOwnerProvider.java
++++ b/src/main/java/snownee/jade/addon/vanilla/AnimalOwnerProvider.java
+@@
+ 	@Override
+ 	public boolean shouldRequestData(EntityAccessor accessor) {
+ 		Entity entity = accessor.getEntity();
+-		return entity instanceof OwnableEntity && getOwnerUUID(entity) == null;
++		if (!(entity instanceof OwnableEntity)) {
++			return false;
++		}
++		UUID ownerUUID = getOwnerUUID(entity);
++		return ownerUUID == null || CommonProxy.getLastKnownUsername(ownerUUID) == null;
+ 	}
