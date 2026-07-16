@@ -1,11 +1,17 @@
 buildscript {
     repositories {
+
         maven {
             name = "Forge"
             url = "https://maven.minecraftforge.net/"
         }
+
+        maven {
+            name = "Sponge"
+            url = "https://repo.spongepowered.org/repository/maven-public/"
+        }
+
         mavenCentral()
-        gradlePluginPortal()
     }
 
     dependencies {
@@ -13,7 +19,6 @@ buildscript {
         classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
     }
 }
-
 
 plugins {
     id 'eclipse'
