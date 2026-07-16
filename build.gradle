@@ -1,8 +1,30 @@
-plugins {
-    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
-    id 'org.spongepowered.mixin' version '0.7-SNAPSHOT'
-    id 'java'
+buildscript {
+    repositories {
+        maven {
+            name = "Forge"
+            url = "https://maven.minecraftforge.net/"
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:6.0.+'
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+    }
 }
+
+
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'java'
+    id 'maven-publish'
+}
+
+
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.spongepowered.mixin'
 
 version = mod_version
 group = mod_group_id
