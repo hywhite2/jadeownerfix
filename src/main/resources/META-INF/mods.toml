@@ -1,0 +1,15 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="jadeownerfix"
+version="${file.jarVersion}"
+displayName="Jade Owner Fix"
+
+[[dependencies.jadeownerfix]]
+modId="jade"
+mandatory=true
+versionRange="[11,)"
+ordering="AFTER"
+side="BOTH"

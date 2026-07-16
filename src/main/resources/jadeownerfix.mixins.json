@@ -1,14 +1,12 @@
 {
   "required": true,
   "package": "com.example.jadeownerfix.mixin",
-  "compatibilityLevel": "JAVA_21",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "jadeownerfix.refmap.json",
   "mixins": [
-      "AnimalOwnerProviderMixin"
-	  ],
+    "AnimalOwnerProviderMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
-  },
-  "overwrites": {
-    "requireAnnotations": true
   }
 }
